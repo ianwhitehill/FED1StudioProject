@@ -8,38 +8,29 @@
     <meta name="Author" content="Ian Whitehill" />
     <link href="../css/custom.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="../images/123456.jpg" type="image/svg" rel="icon" />
-
- 
-
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-
-    <link rel="stylesheet" href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
-
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-    <script>
-        $(function () {
-            $("#accordion").accordion();
-            $("#datepicker").datepicker();
-        });
-    </script>
+    <link href="../css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/custom.css" rel="stylesheet" />
 </head>
-<body>
-    <header>
-        <h1 id="schoolName">Top Gear University</h1>
-        <p>Ambitious But Rubbish</p>
+<body class="container">
+    <header class="row">
+        <img src="../images/logo.jpg" class="col-lg-3" />
+        <div class="col-lg-8">
+            <h1>Top Gear University</h1>
+            <h3>Ambitious But Rubbish</h3>
+        </div>
+        <div class="col-lg-1">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </div>
     </header>
-    <nav class="navbar-default navbar-fixed-top">
-        <a href="javascript:void(0)" class="pull-right" onclick="toggleNav()" id="menu-btn">
-            &#9776;
-        </a>
-        <ul id="nav-list" class="topnav">
-            <li class="active">
+    <nav class="row">
+        <ul>
+            <li>
                 <a href="Index.html">Home</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="Classes.html">Classes</a>
             </li>
             <li>
@@ -51,121 +42,276 @@
         </ul>
     </nav>
     <main>
-        <div class="row">
-
-            <article class="col-sm-4">
-                <h2>The Hammond Driving Style</h2>
-                <p>How to drive any car past your ability and flip it in away that it will catch fire. </p>
-                <a href="../images/flavio-gasperini-YBzsJv3c1EQ-unsplash.jpg" target="_blank">
-                    <img src="../images/flavio-gasperini-YBzsJv3c1EQ-unsplash.jpg" alt="Car on fire" title="Car on Fire" with="600" height="400" class="img-responsive thumb" />
-                </a>
-            </article>
-
-            <article class="col-sm-4">
-                <h2>STIGs fashion tips</h2>
-                <p>How to dress like a tame racing driver and design the perfect outfits for any event.  </p>
-                <a href="../images/lauren-fleischmann-R2aodqJn3b8-unsplash.jpg" target="_blank">
-                    <img src="../images/lauren-fleischmann-R2aodqJn3b8-unsplash.jpg" alt="clothes hanging up" title="clothing rack" with="600" height="400" />
-                </a>
-            </article>
-
-            <article class="col-sm-4">
-                <h2>Mending supercars with a hammer</h2>
-                <p>How to fix any car with a value of over $100,000 with a hammer. </p>
-                <a href="../images/adam-sherez-PtgLGdMzi-Y-unsplash.jpg" target="_blank">
-                    <img src="../images/adam-sherez-PtgLGdMzi-Y-unsplash.jpg" alt="Set of Hammers" title="Your tools" with="600" height="400" />
-                </a>
-            </article>
+        <h1 class="text-center">Class Subjects</h1>
+        <div id="tabs">
+            <ul class="text-center row">
+                <li class="tabTitle col-sm-4 classCard">
+                    <a href="#tabs-1">
+                        <article>
+                            <img src="../images/classholder.jpg" class="imgSize" />
+                            <h2>The Hammond Driving Style</h2>
+                            <p>How to drive any car past your ability and flip it in away that it will catch fire.</p>
+                        </article>
+                    </a>
+                </li>
+                <li class="tabTitle col-sm-4 classCard">
+                    <a href="#tabs-2">
+                        <article>
+                            <img src="../images/classholder.jpg" class="imgSize" />
+                            <h2>STIGs fashion tips</h2>
+                            <p>How to dress like a tame racing driver and design the perfect outfits for any event.</p>
+                        </article>
+                    </a>
+                </li>
+                <li class="tabTitle col-sm-4 classCard">
+                    <a href="#tabs-3">
+                        <article>
+                            <img src="../images/classholder.jpg" class="imgSize" />
+                            <h2>Mending supercars with a hammer</h2>
+                            <p>How to fix any car with a value of over $100,000 with a hammer. </p>
+                        </article>
+                    </a>
+                </li>
+                <li class="tabTitle col-sm-4 classCard">
+                    <a href="#tabs-4">
+                        <article>
+                            <img src="../images/classholder.jpg" class="imgSize" />
+                            <h2>Building a Dragster with Captain Slow</h2>
+                            <p>Building drag racing cars with the idea of luxury is the new performance. </p>
+                        </article>
+                    </a>
+                </li>
+                <li class="tabTitle col-sm-4 classCard">
+                    <a href="#tabs-5">
+                        <article>
+                            <img src="../images/classholder.jpg" class="imgSize" />
+                            <h2>Trying to kill the Toyota Hilux</h2>
+                            <p>Learn how to test a cars ruggedness.</p>
+                        </article>
+                    </a>
+                </li>
+                <li class="tabTitle col-sm-4 classCard">
+                    <a href="#tabs-6">
+                        <article>
+                            <img src="../images/classholder.jpg" class="imgSize" />
+                            <h2>Proving cars are the best </h2>
+                            <p>How to race cars against other thing and loss but come up with a way it justifies the car as better. </p>
+                        </article>
+                    </a>
+                </li>
+            </ul>
+            <div id="tabs-1">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <table class="table-bordered col-lg-6">
+                        <tr class="about">
+                            <th class="text-center">Skill Level</th>
+                            <th class="text-center">Class Name</th>
+                            <th class="text-center">Instructor</th>
+                            <th class="text-center">Meets</th>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Beginner</td>
+                            <td class="tableMarg">The Hammond Driving Style</td>
+                            <td class="tableMarg">Richard Mark Hammond</td>
+                            <td class="tableMarg">Monday and Tuesday at 8am</td>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Intermediate</td>
+                            <td class="tableMarg">The Hammond Driving Style</td>
+                            <td class="tableMarg">Richard Mark Hammond</td>
+                            <td class="tableMarg">Monday and Tuesday at 10am</td>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Advanced</td>
+                            <td class="tableMarg">The Hammond Driving Style</td>
+                            <td class="tableMarg">Richard Mark Hammond</td>
+                            <td class="tableMarg">Monday and Tuesday at 1pm</td>
+                        </tr>
+                    </table>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
+            <div id="tabs-2">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <table class="table-bordered col-lg-6">
+                        <tr class="about">
+                            <th class="text-center">Skill Level</th>
+                            <th class="text-center">Class Name</th>
+                            <th class="text-center">Instructor</th>
+                            <th class="text-center">Meets</th>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Beginner</td>
+                            <td class="tableMarg">STIGs fashion tips</td>
+                            <td class="tableMarg">Ben Collins</td>
+                            <td class="tableMarg">Monday and Tuesday at 8am</td>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Intermediate</td>
+                            <td class="tableMarg">STIGs fashion tips</td>
+                            <td class="tableMarg">Ben Collins</td>
+                            <td class="tableMarg">Monday and Tuesday at 10am</td>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Advanced</td>
+                            <td class="tableMarg">STIGs fashion tips</td>
+                            <td class="tableMarg">Ben Collins</td>
+                            <td class="tableMarg">Monday and Tuesday at 1pm</td>
+                        </tr>
+                    </table>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
+            <div id="tabs-3">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <table class="table-bordered col-lg-6">
+                        <tr class="about">
+                            <th class="text-center">Skill Level</th>
+                            <th class="text-center">Class Name</th>
+                            <th class="text-center">Instructor</th>
+                            <th class="text-center">Meets</th>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Beginner</td>
+                            <td class="tableMarg">Mending supercars with a hammer</td>
+                            <td class="tableMarg">Jeremy Clarkson</td>
+                            <td class="tableMarg">Monday and Tuesday at 8am</td>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Intermediate</td>
+                            <td class="tableMarg">Mending supercars with a hammer</td>
+                            <td class="tableMarg">Jeremy Clarkson</td>
+                            <td class="tableMarg">Monday and Tuesday at 10am</td>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Advanced</td>
+                            <td class="tableMarg">Mending supercars with a hammer</td>
+                            <td class="tableMarg">Jeremy Clarkson</td>
+                            <td class="tableMarg">Monday and Tuesday at 1pm</td>
+                        </tr>
+                    </table>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
+            <div id="tabs-4">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <table class="table-bordered col-lg-6">
+                        <tr class="about">
+                            <th class="text-center">Skill Level</th>
+                            <th class="text-center">Class Name</th>
+                            <th class="text-center">Instructor</th>
+                            <th class="text-center">Meets</th>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Beginner</td>
+                            <td class="tableMarg">Building a Dragster with Captain Slow</td>
+                            <td class="tableMarg">James May</td>
+                            <td class="tableMarg">Wednesday and Thursday at 8am</td>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Intermediate</td>
+                            <td class="tableMarg">Building a Dragster with Captain Slow</td>
+                            <td class="tableMarg">James May</td>
+                            <td class="tableMarg">Wednesday and Thursday at 10am</td>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Advanced</td>
+                            <td class="tableMarg">Building a Dragster with Captain Slow</td>
+                            <td class="tableMarg">James May</td>
+                            <td class="tableMarg">Wednesday and Thursday at 1pm</td>
+                        </tr>
+                    </table>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
+            <div id="tabs-5">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <table class="table-bordered col-lg-6">
+                        <tr class="about">
+                            <th class="text-center">Skill Level</th>
+                            <th class="text-center">Class Name</th>
+                            <th class="text-center">Instructor</th>
+                            <th class="text-center">Meets</th>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Beginner</td>
+                            <td class="tableMarg">Trying to kill the Toyota Hilux</td>
+                            <td class="tableMarg">Chris Harris</td>
+                            <td class="tableMarg">Wednesday and Thursday at 8am</td>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Intermediate</td>
+                            <td class="tableMarg">Trying to kill the Toyota Hilux</td>
+                            <td class="tableMarg">Chris Harris</td>
+                            <td class="tableMarg">Wednesday and Thursday at 10am</td>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Advanced</td>
+                            <td class="tableMarg">Trying to kill the Toyota Hilux</td>
+                            <td class="tableMarg">Chris Harris</td>
+                            <td class="tableMarg">Wednesday and Thursday at 1pm</td>
+                        </tr>
+                    </table>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
+            <div id="tabs-6">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <table class="table-bordered col-lg-6">
+                        <tr class="about">
+                            <th class="text-center">Skill Level</th>
+                            <th class="text-center">Class Name</th>
+                            <th class="text-center">Instructor</th>
+                            <th class="text-center">Meets</th>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Beginner</td>
+                            <td class="tableMarg">Proving cars are the best</td>
+                            <td class="tableMarg">Sabine Schmitz</td>
+                            <td class="tableMarg">Wednesday and Thursday at 8am</td>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Intermediate</td>
+                            <td class="tableMarg">Proving cars are the best</td>
+                            <td class="tableMarg">Sabine Schmitz</td>
+                            <td class="tableMarg">Wednesday and Thursday at 10am</td>
+                        </tr>
+                        <tr>
+                            <td class="tableMarg">Advanced</td>
+                            <td class="tableMarg">Proving cars are the best</td>
+                            <td class="tableMarg">Sabine Schmitz</td>
+                            <td class="tableMarg">Wednesday and Thursday at 1pm</td>
+                        </tr>
+                    </table>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
         </div>
-        <article class="row">
-            <section>
-                <h2>Building a Dragster with Captain SLow</h2>
-                <p>Building drag racing cars with the idea of luxury is the new performance. </p>
-                <a href="../images/arteum-ro-YJQCsA0lXKQ-unsplash.jpg" target="_blank">
-                    <img src="../images/arteum-ro-YJQCsA0lXKQ-unsplash.jpg" alt="Luxury car interior" title="Car Interior" with="600" height="400" />
-                </a>
-            </section>
-
-            <section>
-                <h2>Trying to kill the Toyota Hilux</h2>
-                <p>Learn how to test a cars ruggedness.</p>
-                <a href="../images/sergio-souza-XJg0Nwv0f88-unsplash.jpg" target="_blank">
-                    <img src="../images/sergio-souza-XJg0Nwv0f88-unsplash.jpg" alt="Crushed cars" title="Crushed Cars" with="600" height="400" />
-                </a>
-            </section>
-
-            <section>
-                <h2>Proving cars are the best </h2>
-                <p>How to race cars against other thing and loss but come up with a way it justifies the car as better. </p>
-                <a href="../images/arron-choi-a0-kl4LtjRg-unsplash.jpg" target="_blank">
-                    <img src="../images/arron-choi-a0-kl4LtjRg-unsplash.jpg" alt="Car on a boat dock" title="Car on a boat dock" with="600" height="400" />
-                </a>
-            </section>
-        </article>
-        
-        <article>
-            <h2>Class List</h2>
-            <dl>
-                <dt>The Hammond Driving Style</dt>
-                <dd>
-                    <ul>
-                        <li>Beginner courses are on Monday and Tuesdays from 8am to 10am</li>
-                        <li>Intermediate courses are on Wednesday and Thursdays from 8am to 10am</li>
-                        <li>Advanced courses are on Fridays and Saturdays from 8am to 10am</li>
-                    </ul>
-                </dd>
-                <dt>STIGs fashion tips</dt>
-                <dd>
-                    <ul>
-                        <li>Beginner courses are on Monday and Tuesdays from 3am to 5am</li>
-                        <li>Intermediate courses are on Wednesday and Thursdays from 3am to 5am</li>
-                        <li>Advanced courses are on Fridays and Saturdays from 3am to 5am</li>
-                    </ul>
-                </dd>
-                <dt>Mending supercars with a hammer</dt>
-                <dd>
-                    <ul>
-                        <li>Beginner courses are on Monday and Tuesdays from 2pm to 4pm</li>
-                        <li>Intermediate courses are on Wednesday and Thursdays from 2pm to 4pm</li>
-                        <li>Advanced courses are on Fridays and Saturdays from 2pm to 4pm</li>
-                    </ul>
-                </dd>
-                <dt>Building Dragster with Captain SLow<</dt>
-                <dd>
-                    <ul>
-                        <li>Beginner courses are on Monday and Tuesdays from 10am to 12pm</li>
-                        <li>Intermediate courses are on Wednesday and Thursdays from 10am to 12pm</li>
-                        <li>Advanced courses are on Fridays and Saturdays from 10am to 12pm</li>
-                    </ul>
-                </dd>
-                <dt>Trying to kill the Toyota Hilux</dt>
-                <dd>
-                    <ul>
-                        <li>Beginner courses are on Monday and Tuesdays from 12pm to 2pm</li>
-                        <li>Intermediate courses are on Wednesday and Thursdays from 12pm to 2pm</li>
-                        <li>Advanced courses are on Fridays and Saturdays from 12pm to 2pm</li>
-                    </ul>
-                </dd>
-                <dt>Proving cars are the best</dt>
-                <dd>
-                    <ul>
-                        <li>Beginner courses are on Monday and Tuesdays from 4pm to 6pm</li>
-                        <li>Intermediate courses are on Wednesday and Thursdays from 4pm to 6pm</li>
-                        <li>Advanced courses are on Fridays and Saturdays from 4pm to 6pm</li>
-                    </ul>
-                </dd>
-            </dl>
-        </article>
     </main>
-    <footer>
-        &copy;
-        <p>
-            - <i class="fa fa-twitter-square" aria-hidden="true"></i> @weteachstuff
-            - <i class="fa fa-facebook-square" aria-hidden="true"></i>www.facebook.com/learnwithus
-            - <i class="fa fa-linkedin-square" aria-hidden="true"></i>www.linkedin.com/learnwithus -
-        </p>
+    <footer class="row">
+        <div class="col-lg-11"><p>&copy; 2020 || Whitehill, Ian</p></div>
+        <div class="col-lg-1">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </div>
     </footer>
-    <script src="../js/main.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+            $("#datepicker").datepicker();
+            $("#tabs").tabs();
+            $('#simpleTable').DataTable();
+        });
+    </script>
 </body>
 </html>

@@ -8,40 +8,32 @@
     <meta name="Author" content="Ian Whitehill" />
     <link href="../css/custom.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="../images/123456.jpg" type="image/svg" rel="icon" />
-
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-
-    <link rel="stylesheet" href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
-
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-    <script>
-        $(function () {
-            $("#accordion").accordion();
-            $("#datepicker").datepicker();
-        });
-    </script>
-
+    <link href="../css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/custom.css" rel="stylesheet" />
 </head>
-<body id="newBackgroundPic">
-    <header>
-        <h1 id="schoolName">Top Gear University</h1>
-        <p>Ambitious But Rubbish</p>
+<body class="container">
+    <header class="row">
+        <img src="../images/logo.jpg" class="col-lg-3" />
+        <div class="col-lg-8">
+            <h1>Top Gear University</h1>
+            <h3>Ambitious But Rubbish</h3>
+        </div>
+        <div class="col-lg-1">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </div>
     </header>
-    <nav class="navbar-default navbar-fixed-top">
-        <a href="javascript:void(0)" class="pull-right" onclick="toggleNav()" id="menu-btn">
-            &#9776;
-        </a>
-        <ul id="nav-list" class="topnav">
-            <li class="active">
+    <nav class="row">
+        <ul>
+            <li>
                 <a href="Index.html">Home</a>
             </li>
             <li>
                 <a href="Classes.html">Classes</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="Team.html">Team</a>
             </li>
             <li>
@@ -49,136 +41,159 @@
             </li>
         </ul>
     </nav>
-    <nav id="classNav">
-        <ul>
-            <li>
-                <a href="#leadership">Leadership</a>
-            </li>
-            <li>
-                <a href="#sales">Sales</a>
-            </li>
-            <li>
-                <a href="#admin">Administration</a>
-            </li>
-            <li>
-                <a href="#instructor">Instructors</a>
-            </li>
-        </ul>
-    </nav>
     <main>
-        <section>
-            <h2 id="leadership">Leadership</h2>
-            <div id="accordion">
-
-                <h3>Jeremy Clarkson</h3>
-                <article>
-                    <p id="textColor">
-                        Jeremy Charles Robert Clarkson (born 11 April 1960) is an English broadcaster, journalist and writer who specialises in motoring. He is best known for co-presenting the motoring programmes Top Gear, from 2002 until 2015, and The Grand Tour alongside Richard Hammond and James May. He also currently writes weekly columns for The Sunday Times and The Sun.
-
-                        From a career as a local journalist in northern England, Clarkson rose to public prominence as a presenter of the original format of Top Gear in 1988. Since the mid-1990s, he has become a recognised public personality, regularly appearing on British television presenting his own shows for BBC and appearing as a guest on other shows. As well as motoring, Clarkson has produced programmes and books on subjects such as history and engineering. In 1998, he hosted the first series of Robot Wars, and from 1998 to 2000 he also hosted his own talk show, Clarkson.
-
-                        In 2015, the BBC decided not to renew Clarkson's contract with the company after an assault on a Top Gear producer while filming on location. That year, Clarkson and his Top Gear co-presenters and producer Andy Wilman formed the production company W. Chump & Sons to produce The Grand Tour for Prime Video. Since 2018, Clarkson has hosted the revived ITV game show Who Wants to Be a Millionaire?, replacing former host Chris Tarrant.
-
-                        His opinionated but humorous tongue-in-cheek writing and presenting style has often provoked a public reaction. His actions, both privately and as a Top Gear presenter have also sometimes resulted in criticism from the media, politicians, pressure groups and the public. He also has a significant public following, being credited as a major factor in the resurgence of Top Gear as one of the most popular shows on the BBC.
-                    </p>
-                </article>
-                <h3>Richard Hammond</h3>
-                <article>
-                    
-                    <p id="textColor">
-                        Richard Mark Hammond (born 19 December 1969) is an English television presenter, writer, and journalist. He is best known for co-hosting the BBC Two car programme Top Gear from 2002 until 2015 with Jeremy Clarkson and James May. In 2016, Hammond began presenting The Grand Tour television series, produced by W. Chump & Sons. The show is co-presented with his former Top Gear co-hosts, Clarkson and May, as an exclusive distributed via Amazon Video to Amazon Prime customers.
-
-                        In November 2016, Hammond, alongside the co-presenters of The Grand Tour, Jeremy Clarkson and James May, launched the automotive social media website DriveTribe, where he regularly provides content on his tribe "Hammond's Fob Jockeys". He has also presented Brainiac: Science Abuse (2003–2008), Total Wipeout (2009–2012) and Planet Earth Live (2012).
-                    </p>
-                </article>
-                <h3>James May</h3>
-                <article>
-                    
-                    <p id="textColor">
-                        James Daniel May (born 16 January 1963) is an English television presenter and journalist. He is best known as a co-presenter of the motoring programme Top Gear alongside Jeremy Clarkson and Richard Hammond from 2003 until 2015. As of 2016 he is a director of the production company W. Chump & Sons (founded July 2015) and is also a co-presenter in the television series The Grand Tour for Amazon Video, alongside his former Top Gear colleagues, Clarkson and Hammond, as well as Top Gear's former producer Andy Wilman.
-
-                        May has presented other programmes on themes including science and technology, toys, wine culture, and the plight of manliness in modern times. He wrote a weekly column for The Daily Telegraph's motoring section from 2003 to 2011.
-                    </p>
-                </article>
+        <div id="tabs">
+            <div class="navbar-right">
+                <ul class="sideNav">
+                    <li class="tabSide">
+                        <a href="#tabs-1" class="btn btn-group">Leadership</a>
+                    </li>
+                    <li class="tabSide">
+                        <a href="#tabs-2" class="btn btn-group">Sales</a>
+                    </li>
+                    <li class="tabSide">
+                        <a href="#tabs-3" class="btn btn-group">Administration</a>
+                    </li>
+                    <li class="tabSide">
+                        <a href="#tabs-4" class="btn btn-group">Instructors</a>
+                    </li>
+                </ul>
             </div>
-        </section>
-        <section>
-            <h2 id="sales">Sales</h2>
-            <article>
-                <h3>Chris Evans</h3>
-                <p id="textColor">
-                    Christopher James Evans (born 1 April 1966) is an English television presenter, radio DJ, businessman, voice actor and producer for radio and television. He started his broadcasting career working for Piccadilly Radio, Manchester, as a teenager, before moving to London as a presenter for the BBC's Greater London Radio and then Channel 4 television, where The Big Breakfast made him a star. Soon he was able to dictate highly favourable terms, allowing him to broadcast on competing radio and TV stations. Slots like the Radio 1 Breakfast Show and TFI Friday provided a mix of celebrity interviews, music and comic games, delivered in an irreverent style that attracted high ratings, though often also generated significant numbers of complaints. By 2000 he was the UK's highest paid entertainer, according to the Sunday Times Rich List. In the tax year to April 2017, he was the BBC's highest-paid presenter, earning between £2.2m and £2.25m annually.
+            <div class="row" id="tabs-1">
+                <h2 class="text-center">Leadership</h2>
+                <section class="team">
+                    <img src="../images/profile.jpg" class="col-lg-2" />
+                    <article class="col-lg-8">
+                        <h3>Jeremy Clarkson</h3>
+                        <p>
+                            Jeremy Charles Robert Clarkson (born 11 April 1960) is an English broadcaster, journalist and writer who specialises in motoring. He is best known for co-presenting the motoring programmes Top Gear, from 2002 until 2015, and The Grand Tour alongside Richard Hammond and James May. He also currently writes weekly columns for The Sunday Times and The Sun.
 
-                    In 2005, he started a new career on BBC Radio 2, hosting his long-running Drivetime programme, before moving in 2010 to host The Chris Evans Breakfast Show every weekday morning. He previously presented The One Show on Fridays between 2010 and 2015. Between 2011 and 2018, he co-hosted Radio 2 Live in Hyde Park.
+                            From a career as a local journalist in northern England, Clarkson rose to public prominence as a presenter of the original format of Top Gear in 1988. Since the mid-1990s, he has become a recognised public personality, regularly appearing on British television presenting his own shows for BBC and appearing as a guest on other shows. As well as motoring, Clarkson has produced programmes and books on subjects such as history and engineering. In 1998, he hosted the first series of Robot Wars, and from 1998 to 2000 he also hosted his own talk show, Clarkson.
 
-                    In 2015, Evans signed a three-year deal to lead a new Top Gear line-up. and presented a revival series of TFI Friday. On 4 July 2016, he announced that he would be stepping down as presenter of Top Gear.
+                            In 2015, the BBC decided not to renew Clarkson's contract with the company after an assault on a Top Gear producer while filming on location. That year, Clarkson and his Top Gear co-presenters and producer Andy Wilman formed the production company W. Chump & Sons to produce The Grand Tour for Prime Video. Since 2018, Clarkson has hosted the revived ITV game show Who Wants to Be a Millionaire?, replacing former host Chris Tarrant.
 
-                    On 3 September 2018, he announced that he would be leaving his BBC Radio 2 Breakfast Show on Christmas Eve, and would be returning to Virgin Radio UK to present its breakfast show. He moved from BBC Radio 2 with most of his regular team.
-                </p>
-            </article>
-            <article>
-                <h3>Matt LaBlanc</h3>
-                <p id="textColor">
-                    Matthew Steven LeBlanc (/ləˈblɒŋk/; born July 25, 1967) is an American actor, comedian and director. He is best known for his portrayal of Joey Tribbiani in the NBC sitcom Friends and in its spin-off series Joey. For his work on Friends, LeBlanc received three Emmy Award nominations. He has also starred as a fictionalized version of himself in Episodes (2011–2017), for which he won a Golden Globe Award and received four additional Emmy Award nominations. He co-hosted Top Gear from 2016 to 2019. From 2016 to 2020, he played patriarch Adam Burns in the CBS sitcom Man with a Plan.
-                </p>
-            </article>
-        </section>
-        <section>
-            <h2 id="admin">Administration</h2>
-            <article>
-                <h3>Sabine Schmitz</h3>
-                <p id="textColor">
-                    Sabine Schmitz (Sabine Reck while married; born 14 May 1969) is a German professional motor racing driver for BMW and Porsche, also known for driving the BMW "ring taxi" around the Nürburgring race track as well as being a television personality. She has presented the BBC's motoring programme Top Gear since May 2016.
+                            His opinionated but humorous tongue-in-cheek writing and presenting style has often provoked a public reaction. His actions, both privately and as a Top Gear presenter have also sometimes resulted in criticism from the media, politicians, pressure groups and the public. He also has a significant public following, being credited as a major factor in the resurgence of Top Gear as one of the most popular shows on the BBC.
+                        </p>
+                    </article>
+                    <img src="../images/profile.jpg" class="col-lg-2" />
+                    <article class="col-lg-8">
+                        <h3>Richard Hammond</h3>
+                        <p>
+                            Richard Mark Hammond (born 19 December 1969) is an English television presenter, writer, and journalist. He is best known for co-hosting the BBC Two car programme Top Gear from 2002 until 2015 with Jeremy Clarkson and James May. In 2016, Hammond began presenting The Grand Tour television series, produced by W. Chump & Sons. The show is co-presented with his former Top Gear co-hosts, Clarkson and May, as an exclusive distributed via Amazon Video to Amazon Prime customers.
 
-                    Born to the local hotel and restaurant owning Schmitz family, Sabine and her two elder sisters grew up in the "Hotel am Tiergarten" (in the basement of which is the Pistenklause restaurant) in Nürburg within the Nürburgring Nordschleife.
+                            In November 2016, Hammond, alongside the co-presenters of The Grand Tour, Jeremy Clarkson and James May, launched the automotive social media website DriveTribe, where he regularly provides content on his tribe "Hammond's Fob Jockeys". He has also presented Brainiac: Science Abuse (2003–2008), Total Wipeout (2009–2012) and Planet Earth Live (2012).
+                        </p>
+                    </article>
+                    <img src="../images/profile.jpg" class="col-lg-2" />
+                    <article class="col-lg-8">
+                        <h3>James May</h3>
+                        <p>
+                            James Daniel May (born 16 January 1963) is an English television presenter and journalist. He is best known as a co-presenter of the motoring programme Top Gear alongside Jeremy Clarkson and Richard Hammond from 2003 until 2015. As of 2016 he is a director of the production company W. Chump & Sons (founded July 2015) and is also a co-presenter in the television series The Grand Tour for Amazon Video, alongside his former Top Gear colleagues, Clarkson and Hammond, as well as Top Gear's former producer Andy Wilman.
 
-                    Schmitz trained as Hotelfachfrau (graduate in hotel and catering business) and sommelière. During her marriage to a hotelier she lived in Pulheim, but after her divorce in 2000, up until 2003, she owned a bar-restaurant in Nürburg named the Fuchsröhre (Foxhole) after a track section. In 2004[citation needed] she qualified as a helicopter pilot.
+                            May has presented other programmes on themes including science and technology, toys, wine culture, and the plight of manliness in modern times. He wrote a weekly column for The Daily Telegraph's motoring section from 2003 to 2011.
+                        </p>
+                    </article>
+                </section>
+            </div>
+            <div class="row" id="tabs-2">
+                <h2 class="text-center">Sales</h2>
+                <section class="team">
+                    <img src="../images/profile.jpg" class="col-lg-2" />
+                    <article class="col-lg-8">
+                        <h3>Chris Evans</h3>
+                        <p>
+                            Christopher James Evans (born 1 April 1966) is an English television presenter, radio DJ, businessman, voice actor and producer for radio and television. He started his broadcasting career working for Piccadilly Radio, Manchester, as a teenager, before moving to London as a presenter for the BBC's Greater London Radio and then Channel 4 television, where The Big Breakfast made him a star. Soon he was able to dictate highly favourable terms, allowing him to broadcast on competing radio and TV stations. Slots like the Radio 1 Breakfast Show and TFI Friday provided a mix of celebrity interviews, music and comic games, delivered in an irreverent style that attracted high ratings, though often also generated significant numbers of complaints. By 2000 he was the UK's highest paid entertainer, according to the Sunday Times Rich List. In the tax year to April 2017, he was the BBC's highest-paid presenter, earning between £2.2m and £2.25m annually.
 
-                    Following occasional drives with the family car on the Nordschleife, all three sisters started racing, but only Sabine continued and collected victories. Schmitz won in CHC and VLN race events, the VLN endurance racing championship in 1998, and won the 24 Hours Nürburgring, in 1996 and 1997, all with a BMW M3 entered and co-driven by local veteran Johannes Scheid. In 2006 Schmitz and Klaus Abbelen drove the #97 Porsche 997 in the Nürburgring VLN endurance racing series, entered by Land Motorsport. They finished third in the 24h 2008, beaten only by the factory-backed Manthey-entered winners of 2007 and 2006.
-                </p>
-            </article>
-            <article>
-                <h3>Rory Reid</h3>
-                <p id="textColor">
-                    Rory Reid (born 12 October 1979) is an English television presenter specialising in motoring and technology. Currently presenting on YouTube car channel Autotrader. He has presented on Sky Television's Gadget Geeks, CNET's Car Tech channel and on the YouTube car channel Fast, Furious & Funny. He was editor-in-chief for the website Recombu and has worked on BBC Radio 5 Live's Saturday Edition as a technology journalist.
+                            In 2005, he started a new career on BBC Radio 2, hosting his long-running Drivetime programme, before moving in 2010 to host The Chris Evans Breakfast Show every weekday morning. He previously presented The One Show on Fridays between 2010 and 2015. Between 2011 and 2018, he co-hosted Radio 2 Live in Hyde Park.
 
-                    In February 2016, Chris Evans announced that Reid would be one of the new Top Gear presenters on the revamped show after winning a BBC open audition. He featured as a co-presenter on the twenty-third series, and as a main presenter alongside Chris Harris and Matt LeBlanc for the twenty-fourth, twenty-fifth and twenty-sixth series. He was also co-presenter on the spin-off Extra Gear with Harris for the show's first series.
-                </p>
-            </article>
-        </section>
-        <section>
-            <h2 id="instructor">Instructor</h2>
-            <article>
-                <h3>Ben Collins</h3>
-                <p id="textColor">
-                    Ben Lievesley Collins (born 13 February 1975) is a racing driver from Bristol, England. He has competed in motor racing since 1994 in many categories, from Formula Three and Indy Lights to sportscars, GT racing and stock cars.
+                            In 2015, Evans signed a three-year deal to lead a new Top Gear line-up. and presented a revival series of TFI Friday. On 4 July 2016, he announced that he would be stepping down as presenter of Top Gear.
 
-                    Collins was placed second in the Marlboro Masters Formula 3 championship event in 2000. He set the pace at the 2001 Le Mans 24 hours race in his first season for approximately four hours during the rain at night. After winning the European Stock Car Championship in 2003 ASCAR stock car racing he was signed by PDM Racing to do selected rounds of the 2004 Indy Racing League, but the car never appeared. In 2005, he competed in the British GT Championship in a Porsche 996 GT3, winning races on the way before moving up to the FIA GT Series with Ascari where he led races and scored several pole positions.
+                            On 3 September 2018, he announced that he would be leaving his BBC Radio 2 Breakfast Show on Christmas Eve, and would be returning to Virgin Radio UK to present its breakfast show. He moved from BBC Radio 2 with most of his regular team.
+                        </p>
+                    </article>
+                    <img src="../images/profile.jpg" class="col-lg-2" />
+                    <article class="col-lg-8">
+                        <h3>Matt LaBlanc</h3>
+                        <p>
+                            Matthew Steven LeBlanc (/ləˈblɒŋk/; born July 25, 1967) is an American actor, comedian and director. He is best known for his portrayal of Joey Tribbiani in the NBC sitcom Friends and in its spin-off series Joey. For his work on Friends, LeBlanc received three Emmy Award nominations. He has also starred as a fictionalized version of himself in Episodes (2011–2017), for which he won a Golden Globe Award and received four additional Emmy Award nominations. He co-hosted Top Gear from 2016 to 2019. From 2016 to 2020, he played patriarch Adam Burns in the CBS sitcom Man with a Plan.
+                        </p>
+                    </article>
+                </section>
+            </div>
+            <div class="row" id="tabs-3">
+                <h2 class="text-center">Administration</h2>
+                <section class="team">
+                    <img src="../images/profile.jpg" class="col-lg-2" />
+                    <article class="col-lg-8">
+                        <h3>Sabine Schmitz</h3>
+                        <p>
+                            Sabine Schmitz (Sabine Reck while married; born 14 May 1969) is a German professional motor racing driver for BMW and Porsche, also known for driving the BMW "ring taxi" around the Nürburgring race track as well as being a television personality. She has presented the BBC's motoring programme Top Gear since May 2016.
 
-                    In addition to racing, Collins' company Collins Autosport Limited provides precision and stunt driving services, particularly for BBC Television, including Top Gear and Top Gear Live, as well as for the film industry, such as driving James Bond's car in Quantum of Solace and Casino Royale, and Eve Moneypenny's car in Skyfall.
+                            Born to the local hotel and restaurant owning Schmitz family, Sabine and her two elder sisters grew up in the "Hotel am Tiergarten" (in the basement of which is the Pistenklause restaurant) in Nürburg within the Nürburgring Nordschleife.
 
-                    In August 2010, The Sunday Times alleged that Collins may be one of the identities of The Stig—an otherwise unidentified presenter on the Top Gear show—on the basis of financial filing made by the Collins Autosport company.[citation needed] On 1 September 2010 the BBC was refused a court injunction preventing Collins from publishing an autobiography revealing himself to be The Stig. On 1 October 2010, it was announced that Collins would join Fifth Gear as a presenter. In 2012 Collins joined as co-presenter of Polish TVN's Automaniak. In February 2014, he was added to the 'Drivers Club' of the newly formed Formula E series, but did not compete in the inaugural 2014–15 season.
-                </p>
-            </article>
-            <article>
-                <h3>Chris Harris</h3>
-                <p id="textColor">
-                    Christopher James Harris (born 20 January 1975) is a British automotive journalist[1], racing driver and television presenter. Harris has worked as a reviewer, writer and editor for many automotive magazines, including Evo, Autocar and Jalopnik. He has presented numerous television and YouTube series through NBCSN and DRIVE.
+                            Schmitz trained as Hotelfachfrau (graduate in hotel and catering business) and sommelière. During her marriage to a hotelier she lived in Pulheim, but after her divorce in 2000, up until 2003, she owned a bar-restaurant in Nürburg named the Fuchsröhre (Foxhole) after a track section. In 2004[citation needed] she qualified as a helicopter pilot.
 
-                    From 2017, Harris has been one of the three main presenters of Top Gear, after previously making regular appearances throughout the twenty-third series in 2016.[5] He has his own YouTube Channel, Chris Harris on Cars, in which he and Neil Carey produce and film their own automotive reviews and content. On 28 June 2016, the Chris Harris on Cars web series was moved from YouTube to the official Top Gear website and in July 2016, Chris Harris on Cars was launched on BBC America.
-                </p>
-            </article>
-        </section>
+                            Following occasional drives with the family car on the Nordschleife, all three sisters started racing, but only Sabine continued and collected victories. Schmitz won in CHC and VLN race events, the VLN endurance racing championship in 1998, and won the 24 Hours Nürburgring, in 1996 and 1997, all with a BMW M3 entered and co-driven by local veteran Johannes Scheid. In 2006 Schmitz and Klaus Abbelen drove the #97 Porsche 997 in the Nürburgring VLN endurance racing series, entered by Land Motorsport. They finished third in the 24h 2008, beaten only by the factory-backed Manthey-entered winners of 2007 and 2006.
+                        </p>
+                    </article>
+                    <img src="../images/profile.jpg" class="col-lg-2" />
+                    <article class="col-lg-8">
+                        <h3>Rory Reid</h3>
+                        <p>
+                            Rory Reid (born 12 October 1979) is an English television presenter specialising in motoring and technology. Currently presenting on YouTube car channel Autotrader. He has presented on Sky Television's Gadget Geeks, CNET's Car Tech channel and on the YouTube car channel Fast, Furious & Funny. He was editor-in-chief for the website Recombu and has worked on BBC Radio 5 Live's Saturday Edition as a technology journalist.
+
+                            In February 2016, Chris Evans announced that Reid would be one of the new Top Gear presenters on the revamped show after winning a BBC open audition. He featured as a co-presenter on the twenty-third series, and as a main presenter alongside Chris Harris and Matt LeBlanc for the twenty-fourth, twenty-fifth and twenty-sixth series. He was also co-presenter on the spin-off Extra Gear with Harris for the show's first series.
+                        </p>
+                    </article>
+                </section>
+            </div>
+            <div class="row" id="tabs-4">
+                <h2 class="text-center">Instructor</h2>
+                <section class="team">
+                    <img src="../images/profile.jpg" class="col-lg-2" />
+                    <article class="col-lg-8">
+                        <h3>Ben Collins</h3>
+                        <p>
+                            Ben Lievesley Collins (born 13 February 1975) is a racing driver from Bristol, England. He has competed in motor racing since 1994 in many categories, from Formula Three and Indy Lights to sportscars, GT racing and stock cars.
+
+                            Collins was placed second in the Marlboro Masters Formula 3 championship event in 2000. He set the pace at the 2001 Le Mans 24 hours race in his first season for approximately four hours during the rain at night. After winning the European Stock Car Championship in 2003 ASCAR stock car racing he was signed by PDM Racing to do selected rounds of the 2004 Indy Racing League, but the car never appeared. In 2005, he competed in the British GT Championship in a Porsche 996 GT3, winning races on the way before moving up to the FIA GT Series with Ascari where he led races and scored several pole positions.
+
+                            In addition to racing, Collins' company Collins Autosport Limited provides precision and stunt driving services, particularly for BBC Television, including Top Gear and Top Gear Live, as well as for the film industry, such as driving James Bond's car in Quantum of Solace and Casino Royale, and Eve Moneypenny's car in Skyfall.
+
+                            In August 2010, The Sunday Times alleged that Collins may be one of the identities of The Stig—an otherwise unidentified presenter on the Top Gear show—on the basis of financial filing made by the Collins Autosport company.[citation needed] On 1 September 2010 the BBC was refused a court injunction preventing Collins from publishing an autobiography revealing himself to be The Stig. On 1 October 2010, it was announced that Collins would join Fifth Gear as a presenter. In 2012 Collins joined as co-presenter of Polish TVN's Automaniak. In February 2014, he was added to the 'Drivers Club' of the newly formed Formula E series, but did not compete in the inaugural 2014–15 season.
+                        </p>
+                    </article>
+                    <img src="../images/profile.jpg" class="col-lg-2" />
+                    <article class="col-lg-8">
+                        <h3>Chris Harris</h3>
+                        <p>
+                            Christopher James Harris (born 20 January 1975) is a British automotive journalist[1], racing driver and television presenter. Harris has worked as a reviewer, writer and editor for many automotive magazines, including Evo, Autocar and Jalopnik. He has presented numerous television and YouTube series through NBCSN and DRIVE.
+
+                            From 2017, Harris has been one of the three main presenters of Top Gear, after previously making regular appearances throughout the twenty-third series in 2016.[5] He has his own YouTube Channel, Chris Harris on Cars, in which he and Neil Carey produce and film their own automotive reviews and content. On 28 June 2016, the Chris Harris on Cars web series was moved from YouTube to the official Top Gear website and in July 2016, Chris Harris on Cars was launched on BBC America.
+                        </p>
+                    </article>
+                </section>
+            </div>
+        </div>
     </main>
-    <footer>
-        &copy;
-        <p>
-            - <i class="fa fa-twitter-square" aria-hidden="true"></i> @weteachstuff
-            - <i class="fa fa-facebook-square" aria-hidden="true"></i>www.facebook.com/learnwithus
-            - <i class="fa fa-linkedin-square" aria-hidden="true"></i>www.linkedin.com/learnwithus -
-        </p>
+    <footer class="row">
+        <div class="col-lg-11"><p>&copy; 2020 || Whitehill, Ian</p></div>
+        <div class="col-lg-1">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </div>
     </footer>
-    <script src="../js/main.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+            $("#datepicker").datepicker();
+            $("#tabs").tabs();
+            $('#simpleTable').DataTable();
+        });
+    </script>
 </body>
 </html>

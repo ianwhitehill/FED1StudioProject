@@ -72,15 +72,10 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\custom.css" />
-    <Content Include="images\123456.jpg" />
-    <Content Include="images\123456789.jpg" />
-    <Content Include="images\adam-sherez-PtgLGdMzi-Y-unsplash.jpg" />
-    <Content Include="images\arron-choi-a0-kl4LtjRg-unsplash.jpg" />
-    <Content Include="images\arteum-ro-YJQCsA0lXKQ-unsplash.jpg" />
-    <Content Include="images\flavio-gasperini-YBzsJv3c1EQ-unsplash.jpg" />
-    <Content Include="images\lauren-fleischmann-R2aodqJn3b8-unsplash.jpg" />
-    <Content Include="images\sergio-souza-XJg0Nwv0f88-unsplash.jpg" />
-    <Content Include="images\ville-kaisla-HNCSCpWrVJA-unsplash.jpg" />
+    <Content Include="images\classholder.jpg" />
+    <Content Include="images\holder.jpg" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\profile.jpg" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\main.js" />
@@ -95,7 +90,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\370308078b7d4431830c605de802dd60.ico.zip" />
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap-theme.min.css.map" />
     <Content Include="css\bootstrap.css.map" />
