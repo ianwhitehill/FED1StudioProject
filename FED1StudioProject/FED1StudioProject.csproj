@@ -67,34 +67,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\bootstrap-theme.css" />
-    <Content Include="css\bootstrap-theme.min.css" />
-    <Content Include="css\bootstrap.css" />
-    <Content Include="css\bootstrap.min.css" />
-    <Content Include="css\custom.css" />
-    <Content Include="images\classholder.jpg" />
-    <Content Include="images\holder.jpg" />
-    <Content Include="images\logo.jpg" />
-    <Content Include="images\profile.jpg" />
-    <Content Include="js\bootstrap.js" />
-    <Content Include="js\bootstrap.min.js" />
-    <Content Include="js\main.js" />
-    <Content Include="js\npm.js" />
-    <Content Include="Properties\Classes.html" />
-    <Content Include="Properties\Contact.html" />
-    <Content Include="Properties\Index.html" />
-    <Content Include="Properties\Team.html" />
+    <Content Include="Content\css\bootstrap-theme.css" />
+    <Content Include="Content\css\bootstrap-theme.min.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\custom.css" />
+    <Content Include="Content\images\classholder.jpg" />
+    <Content Include="Content\images\holder.jpg" />
+    <Content Include="Content\images\logo.jpg" />
+    <Content Include="Content\images\profile.jpg" />
+    <Content Include="Content\js\bootstrap.js" />
+    <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\main.js" />
+    <Content Include="Content\js\npm.js" />
+    <Content Include="Classes.html" />
+    <Content Include="Contact.html" />
+    <Content Include="Index.html" />
+    <Content Include="Team.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\bootstrap-theme.css.map" />
-    <Content Include="css\bootstrap-theme.min.css.map" />
-    <Content Include="css\bootstrap.css.map" />
-    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="Content\css\bootstrap-theme.css.map" />
+    <Content Include="Content\css\bootstrap-theme.min.css.map" />
+    <Content Include="Content\css\bootstrap.css.map" />
+    <Content Include="Content\css\bootstrap.min.css.map" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
